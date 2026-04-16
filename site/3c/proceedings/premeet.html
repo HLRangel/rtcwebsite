@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important Pre-Meeting Observations of the 3rd Yearly Meeting</title>
+</head>
+
+<body>
+    <div style="width: 1000px; margin:auto;">
+        <div style="text-align: center;">
+            <p>From the Center</p>
+            <h1>Important Pre-Meeting Observations of the 3rd Yearly Meeting</h1>
+        </div>
+        <h2 id="tbloc-goals">TBLOC Goals</h2>
+
+        <p>One of the main future aims of the TBLOC project is archiving and
+        preserving the websites we list. As such, we should figure out a way of
+        doing web crawling without completely hammering our storage space.</p>
+        <p>My proposal is that we don’t crawl whole websites for now, and
+        instead focus on creating some sort of browser extension that would
+        allow users to capture a page from one of the websites on the list (or
+        submit a suggestion to include a site on the list). I know this is
+        probably putting too much faith on the ability of the average online
+        communist to reliably click a button, but it’s one of the options, and
+        one I’m favorable towards because it creates a small amount of
+        continuous engagement between our project and the outside world.</p>
+
+        <p>Obviously, just straight-up running something like HTTrack on a bunch
+        of webpages and distributing the zip files is also an option, but an
+        extension would allow us to introduce some very interesting dynamics. We
+        could regulate the amount of demand for archival services via regulating
+        positive reinforcement, introducing little “daily goals” which we then
+        scale back on when we need to expand storage. The possibilities are
+        endless for such a simple piece of software. Writing browser extensions
+        is annoying, though, so if we go forth with this plan, I recommend we
+        start with a Chrome extension in order to reach the widest possible
+        audience for the least amount of work.</p>
+
+        <p>Eventually, once we have enough data, it’d be interesting to focus on
+        a cold storage project. This is something that the Marxists Internet
+        Archive itself used to do, but eventually gave up on because of the
+        sheer amount of things they hosted.</p>
+
+        <h4 id="additional-goal-user-side-blog-engine">Additional goal:
+        user-side blog engine</h4>
+
+        <p>It would be wise to develop a program allowing for us to do user-side
+        rendering of Markdown or AsciiDoc text as part of a wider blog engine.
+        Something that requires none of our input at all to publish a text
+        outside of dropping a text file into a directory and changing a JSON
+        file is desirable and can help our future archival efforts if we ever
+        decide to provide transcriptions of scans or something similar.</p>
+        <p>We first need to work on the WebAssembly tooling for such a program,
+        as writing even simple pieces of software in JavaScript can be
+        complicated. I suggest we use C. We’ll need to write a memory allocator
+        in order to do anything useful, along with reimplementing a few standard
+        library functions. This would require some work, but the upside is that
+        it can be re-used for other projects, including our extension.</p>
+
+        <h2 id="the-rtcs-education-and-outreach-tasks">The RTC’s education and
+        outreach tasks</h2>
+
+        <p>Over the last 3 years, I’ve slowly realized that attempts at outreach
+        towards organizations, especially on the matter of operational security,
+        are ineffective. Any real change in the way things go has to come from
+        within, and our experience shows us that it cannot be a prescribed
+        change: forms arise naturally, and militants can only succeed if they’re
+        all endowed with the conscience of the effects of their actions.</p>
+
+        <p>This seems almost like a truism, but it hides within it a rejection
+        of bureaucratic forms, which seek to recreate apparatuses from the last
+        century with a hundreth of the required quorum. As systems of social
+        regulation and control become more widespread and decentralized, the
+        role of the “social brain” of the organization, of the procedures that
+        arise from the relationship between militants, becomes more important.
+        There is not any room for uncertain and inefficient prescription, as our
+        movement has not yet achieved the critical mass required to make its
+        purpose arise above any sort of failure in form.</p>
+
+        <p>Effectively, this means we need to take people into our work. Even
+        something as simple as what we have, which is an online space for
+        technical exchange and software development, can have a real effect on
+        how future practical positions develop, much like the letter groups of
+        yesteryear had their own influence. Of course, we won’t provoke the
+        revolution by writing software or archiving, instead - and this is a
+        position that all groups agree with to some extent - there is important
+        experience to be gained from being part of this work. Being able to
+        articulate knowledge in a pedagogical manner critical for all education,
+        including education around communist practice.</p>
+
+        <p>What we have to ensure in the future are opportunities for
+        participation. The mere assignment of tasks, like what happens in some
+        environments, is futile and discouraging. We also need to ensure our
+        political tasks do not interfere with the distribution of our work,
+        because after all, most software is relatively un-opinionated outside of
+        its specific design. One wouldn’t publish a mathematical formula as a
+        statement in a political journal because this only has a constraining
+        effect and is a waste of effort: essentially, where possible, we must
+        create independent projects that are useful on their own, which we then
+        instrumentalize for our own goals.</p>
+
+        <h4 id="outreach-the-political-situation-of-the-technical-scientific-space">Outreach:
+        the political situation of the technical-scientific space</h4>
+
+        <p>Software development is one of the handful of matters in the exact
+        sciences where there is a strong inter-class non-academic community
+        acting for a purpose other than personal wealth or prestige. Of course,
+        I am referring here to the utopian ideals of the Free/Libre Software
+        movement (not open-source in general), focused around the Free Software
+        Foundation (FSF), which is recently facing the ascension of a
+        bourgeois-progressive grassroots movement.</p>
+
+        <p>The FSF is very important overall. It is the main apparatus behind
+        the things that actually make Linux machines useful, such as the C
+        Library and coreutils, along with many other projects. If you want to
+        learn what they do, there’s no better resource than <a 
+        href="https://fsf.org">their website</a>. During the late 2000s and
+        early 2010s, they had a real political presence that spilled over to the
+        outside world, and outside the US, were the main people consulted when
+        it came to organizing the petty-bourgeois movement for “technological
+        sovereignty”. Of course, this conjecture doesn’t exist anymore, and they
+        have lost a significant amount of influence over time, but the devotees
+        of libre software are still there, and they are upset.</p>
+
+        <p>Over the last few years, one of the main causes of internal strife
+        has been the tenure of board member Richard Stallman, the founder of the
+        FSF and its former president. He can really be considered the utopian
+        thinker of computing. You should <a
+        href="https://www.gnu.org/philosophy/fsfs/rms-essays.pdf">read some of
+        his work</a> instead of relying on any half-baked summary we could
+        provide.</p>
+
+        <p>Ever since 2019, the FSF has been under pressure to get rid Stallman
+        due to a variety of controversial statements. While a lot of what he
+        said is pretty bad, some of it is also mischaracterized. To learn more,
+        <a href="https://rms-open-letter.github.io/">read the open latter
+        calling for his resignation</a>, along with <a
+        href="https://stallmansupport.org">the response to it</a>.</p>
+
+        <p>Stallman lost the presidency, but was reinstated to the board of the
+        FSF in 2021, and retained influence even during his suspension. Geoffrey
+        Knauth took his place as interim, however, he has been occupying the
+        role for 5 years.</p>
+
+        <p>The big recent change comes from the grouping around Drew DeVault,
+        creator of the Hare programming language and founder of the alternative
+        git hosting service SourceHut. Previously just another software
+        developer, he had a change of heart a few years ago and positioned
+        himself as one of the Free Software community’s main figures against
+        misogyny and other forms of harassment, garnering a fair amount of
+        support where others have mostly failed. This is not only because he’s a
+        white man (though it’s definitely helped), but also due to his charisma
+        and non-conciliatory stance: where previously one would have tried to
+        work within established forms of project management, he circumvents them
+        completely, avoiding the classic trap of endless bureaucratic
+        discussions.</p>
+
+        <p>His latest enemy has been the FSF in general, with the distaste for
+        the organization being embodied by the figure of Stallman in particular.
+        One of his biggest tactics has been traffic capture via the “Write Free
+        Software” website, where budding software developers are attracted away
+        from the FSF and into a (far more friendlier and easier to interact
+        with) community of programmers.</p>
+
+        <p>It all culminated in October 14th, when “The Stallman report” was
+        released, containing a series of allegations of harassment (including
+        emotional extortion), a general stubborn attitude towards change, along
+        with union-busting within the FSF and behaving like a typical
+        petty-bourgeois tyrant (that’s the movement he represents, after all).
+        Now, there’s a disciplinary hearing scheduled for next week at the
+        organization, where things may or may not change.</p>
+
+        <p>The Free Software movement, while it is petty-bourgeois and sometimes
+        even has a reactionary character, requires our observation. It is truly
+        a “mass movement of the trade school”, in that it actually is
+        inter-class, unlike many single-issue platforms. There are, today, many
+        waiters and janitors writing free software, just as there are executives
+        doing so. As such, it represents an organic utopian movement and is the
+        main counterbalance between the wholly profit-seeking nature of much of
+        the discourse around programming. Its nature as a social project above a
+        technical one also tames the wholly reactionary nature of the mediocre
+        disciples of technical excellence.</p>
+
+        <p>The replacement of the FSF with a movement more aligned to that of
+        the bourgeois left in general would be a negative development,
+        especially during an era where open-source at large is in crisis. While
+        getting involved in petty squabbles is a waste of time for us, the
+        domino effect of this could be silently consequential to the whole
+        technical space.</p>
+
+    </div>
+</body>
+
+</html>

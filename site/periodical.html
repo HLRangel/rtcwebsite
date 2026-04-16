@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+  {{ set title "Texts" }}
+  {{ include templates/head.html }}
+
+  <style>
+      .small{
+        font-size: 12px;
+      }
+  </style>
+
+  <body>
+    {{ include templates/topbar.html }}
+
+    <div class="main-body">
+        <div class="post-listings">
+          {{ iter_dir articles
+            {{ add_document {{ var filepath }} "articles" }}
+          }}
+
+          {{ produce_base "articles" }}
+
+          {{ set articles_base {{ cutbase_extension "md" {{ load_base "articles" }} }} }}
+
+          {{ set articles_base {{ sortbase_by_key "datestamp" {{ var articles_base }} }} }}
+
+          {{ iter_base {{ reverse_base_order {{ var articles_base }} }}
+            {{ set path "/articles/article-{{ var datestamp }}.html" }}
+
+            <div class="news-container">
+              {{ ifdef realpath
+                <h3><a href="{{ var realpath }}">{{ var title }}</a></h3>
+              }}
+              
+              {{ ifndef realpath
+                {{ gen_doc_from_template {{ var path }} "templates/post.html" }}
+                <h3><a href="{{ var path }}">{{ var title }}</a></h3>
+              }}
+
+              <hr>
+
+              <p class="small">Published on the {{ var date }}</p>
+                <details>
+                  <summary class="small">Additional details</summary>
+
+                  {{ ifdef realpath
+                    <p class="small">This article is a simple HTML page, transitioned over from a previous version of the site. It may look outdated in comparison to all other content.</p>
+                  }}
+
+                  <p class="small">Datestamp: {{ var datestamp }}</p>
+                </details>
+            </div>
+          }}
+
+        </div>
+    </div>
+        
+    {{ include templates/bottombar.html }}
+  </body>
+</html>

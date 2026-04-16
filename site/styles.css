@@ -1,0 +1,308 @@
+@font-face {
+    font-family: "Work Sans";
+    src: url("/assets/fonts/WorkSans.ttf") format("truetype");
+}
+
+.main-body{
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    width: 80%;
+    padding-top: 10px;
+    margin: auto;
+    font-size: 15pt;
+    color: #253031;
+    min-height: calc(100vh - 15rem);
+    padding-bottom: 5vh;
+}
+
+.header{
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    text-align: center;
+    color: #253031;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: #253031;
+}
+hr{
+    border-color: antiquewhite;
+}
+.footer{
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 13px;
+    color: #FDFDFF;
+    width: 80%;
+    margin: auto;
+}
+.topbar-image{
+    margin: auto;
+    display: block;
+}
+.bottom-image-link{
+    text-decoration: none;
+}
+
+.column-bottomlink {
+    float: left;
+    padding: 0px;
+}
+
+.column-bottomlink-desc {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    width: 50%;
+    margin-top: 9px;
+    float: right;
+    font-size: 12px;
+}
+
+.vl-bottomlink {
+    border-right: 1px solid black;
+    height: 40px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+table, th, td {
+    border: 1px solid #FDFDFF;
+    padding: 3px 3px 3px 3px;
+}
+
+#topbar {
+    align-content: center;
+    overflow:visible;
+    flex-wrap: wrap;  
+    height: 50px;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    background-color: black;
+}
+
+#topbar a {
+    text-decoration: none;
+    color:aliceblue;
+    font-family: "Anton SC", sans-serif;
+    text-transform: uppercase;
+    font-size: 14pt;
+    display: flex;
+    margin-right: 15px;
+}
+
+.burguer-menu {
+    color: white;
+    float: right;
+    margin-left: auto;
+    font-weight: 800;
+}
+
+.bottombar {
+    overflow: hidden;
+    background-color: #eaeaea;
+    width: 100%;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    height: 15rem;
+}
+
+.bottombar a{
+    color: #146fd1;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bottombar-logo {
+    margin-right: 20px;
+}
+
+.bottom-text-content {
+    margin: auto;
+    width: 90%;
+}
+
+.rtc-logo {
+    padding-left: 15px;
+}
+
+.bottom-flex-content {
+    flex-wrap: wrap;  
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+}
+
+.link-list {
+    margin-left: 10px;
+    margin-right: 12px;
+}
+
+.vertical-line {
+    border-right-style: solid;
+    border-right-width: 2px;
+    font-size: 16pt;
+    margin-right: 12px;
+}
+
+.news-container {
+    width: 600px;
+    padding: 5px 10px 10px 10px;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #253031;
+    margin-bottom: 20px;
+}
+
+.news-container h3 {
+    margin: 0 0 0 0;
+}
+
+.news-container p {
+    margin: 0 0 0 0;
+}
+
+.news-container a {
+    text-decoration: none;
+}
+
+.news-container details {
+    margin-top: 10px;
+}
+
+.news-container details p {
+    margin-top: 10px;
+}
+
+.stub {
+    text-decoration: dotted;
+}
+
+.genpost p {
+    margin: 0 0 0 0;
+}
+
+.genpost h1,h2,h3,h4,h5,h6 {
+    margin: 0 0 0 0;
+}
+
+.genpost br {
+    font-size: 0;
+}
+
+.genpost ol {
+    margin: 0 0 0 0;
+}
+
+.posttop {
+    width: 55%;
+}
+
+.posttop p {
+    margin: 0 0 0 0;
+    margin-bottom: 20px;
+}
+
+.posttop h1{
+    font-size: 24pt;
+    margin: 0 0 0 0;
+    margin-bottom: 5px;
+    margin-top: 2vh;
+}
+
+.posttop hr {
+    margin-bottom: 5vh;
+}
+
+.posttop img {
+    object-fit:contain;
+    width: 100%;
+    height: auto;
+}
+
+.post-listings {
+    margin-top: 3vh;
+}
+
+.palestinewarn {
+    text-align: center;
+    background-color: yellow;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.palestinewarn p {
+    margin: 0 0 0 0;
+    margin-bottom: 4px;
+}
+
+.palestinewarn a {
+    color: black;
+}
+
+.innerwarn {
+    width: 90%;
+}
+
+.venezuela {
+    background-color: rgb(231, 31, 31);
+    color: white;
+}
+
+.big-mobile-menu {
+    position: fixed;
+    
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(13, 13, 14, 0.8);
+    backdrop-filter: blur(20px);
+}
+
+.big-mobile-wrapper {
+    margin: auto;
+    margin-top: 20vh;
+
+    text-align: center;
+}
+
+.big-mobile-link a {
+    color: white;
+    font-family: "Anton SC", serif;
+
+    font-size: 26pt;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    .news-container {
+        width: 95%;
+    }
+
+    .posttop {
+        width: 100%;
+    }
+
+    .topbar-link {
+        display: none;
+    }
+}
+
+@media (min-width: 800px) {
+    .burguer-menu {
+        display: none;
+    }
+}

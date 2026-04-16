@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contributing to TBLOC | Redistribute, Transform, Copy</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/site.webmanifest">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+    <meta name="twitter:site" content="Revolutionary Technical Collective">
+    <meta name="theme-color" content="#BF241F">
+    
+    <meta property="og:url" content="https://rtc.comrades.sbs/">
+
+            <meta property="og:title" content="Contributing to TBLOC">
+        <meta name="twitter:title" content="Contributing to TBLOC">
+    
+    
+    
+
+    
+
+    <meta property="og:site_name" content="Redistribute, Transform, Copy">
+
+    <link rel="stylesheet" href="/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Knewave&display=swap" rel="stylesheet">
+</head>
+
+  <body>
+    <div id="topbar">
+    <div class="rtc-logo">
+        <a href="/index.html">
+            <img src="/assets/images/rtclogo.png" width="83" height="42">
+        </a>
+    </div>
+
+    <div class="topbar-link">
+        <a href="/periodical.html">TEXTS</a>
+    </div>
+
+    <div class="topbar-link">
+        <a href="/support.html">DONATE</a>
+    </div>
+
+    <div class="topbar-link">
+        <a href="/contact.html">INQUIRE</a>
+    </div>
+
+    <div class="topbar-link">
+        <a href="/join.html">CONTRIBUTE</a>
+    </div>
+
+    <div class="burguer-menu">
+        <a href="#" onclick="topmenuToggle();">☰</a>
+    </div>
+</div>
+
+    <div class="main-body">
+      <p>Currently, we only allow people to commit via sending git patches, which are machine-generated text files describing all changes to a project. This is in order to allow people without knowledge of expected conventions in git hosting services such as GitHub to contribute to our work.</p>
+
+      <h2 id="download-the-repository">Download the repository</h2>
+
+      <p><a href="https://tbloc.comrades.sbs/tbloc.git.zip">Download a compressed version of the remote here</a> and unzip it. Then you’ll be ready to make changes.</p>
+
+      <h2 id="download-git">Download git</h2>
+
+      <p>Git is the most widely-used version control system, which helps us keep track of every modification. <a href="https://git-scm.com/downloads">A variety of downloads are available here</a>.</p>
+
+      <p>Make sure to set your username and e-mail correctly via the following commands:</p>
+
+      <p><code class="language-plaintext highlighter-rouge">git config --global user.name “INSERT USERNAME HERE”</code></p>
+
+      <p><code class="language-plaintext highlighter-rouge">git config --global user.name “INSERT E-MAIL HERE”</code></p>
+
+      <h2 id="test-your-changes">Test your changes</h2>
+
+      <p>After making your desired changes, you should test them. There are a variety of web servers available out there which allow for local testing. If you’re on Linux and have <code class="language-plaintext highlighter-rouge">busybox</code> installed, you can begin a server on the current directory at port 8000 via the command:</p>
+
+      <p><code class="language-plaintext highlighter-rouge">busybox httpd -f -p 8000</code></p>
+
+      <p>And access it in your browser via the link:</p>
+
+      <p><code class="language-plaintext highlighter-rouge">http://localhost:8000</code></p>
+
+      <h2 id="commit-your-changes">Commit your changes</h2>
+
+      <p>If you’ve added any new files, include them in the repository via the command:</p>
+
+      <p><code class="language-plaintext highlighter-rouge">git add FILENAME</code></p>
+
+      <p>Where “FILENAME” stands for the path of the file.</p>
+
+      <p>Commit the changes via:</p>
+
+      <p><code class="language-plaintext highlighter-rouge">git commit</code></p>
+
+      <p>Remember to <a href="https://justinjoyce.dev/git-commit-and-commit-message-best-practices/">use best practices for commit messages</a>.</p>
+
+      <h2 id="see-your-commits">See your commits</h2>
+
+      <p>View your commit IDs and messages via:</p>
+
+      <p><code class="language-plaintext highlighter-rouge">git log</code></p>
+
+      <p>You will use the commit IDs to generate the patch file.</p>
+
+      <h2 id="get-a-patch-file">Get a patch file</h2>
+
+      <h3 id="for-a-single-commit">For a single commit</h3>
+
+      <p>Create a patch file for a single commit via:</p>
+
+      <p><code class="language-plaintext highlighter-rouge">git format-patch master id</code></p>
+
+      <p>Where <code class="language-plaintext highlighter-rouge">id</code> is the commit ID.</p>
+
+      <h3 id="for-a-range-of-commits">For a range of commits</h3>
+
+      <p>Create a patch file for a range of commits via:</p>
+
+      <p><code class="language-plaintext highlighter-rouge">git format-patch master id1..id2</code></p>
+
+      <p>From commit ID <code class="language-plaintext highlighter-rouge">id1</code> to <code class="language-plaintext highlighter-rouge">id2</code>.</p>
+
+      <h2 id="send-us-the-patch-file">Send us the patch file</h2>
+
+      <p>Running <code class="language-plaintext highlighter-rouge">git format-patch</code> will have created a <code class="language-plaintext highlighter-rouge">.patch</code> file in the directory you ran it from. Send it either as an attachment or as <a href="https://useplaintext.email/">plaintext e-mail</a> to:</p>
+
+      <p><code class="language-plaintext highlighter-rouge">tbloc-patches (at) comrades (dot) sbs</code></p>
+
+      <h2 id="legal-disclaimer">Legal disclaimer</h2>
+
+      <p>As per the LICENSE file, you agree to release all your contributions under the GNU General Public License, Version 3.</p>
+    </div>
+        
+    <div class="bottombar" style="padding-bottom: 6px;">
+<div style="background-color: black; height: 6px;"><br></div>
+
+<div class="bottom-text-content"> 
+    <div class="bottom-flex-content">
+        <div class="bottombar-logo">
+            <img src="/assets/images/rtclogobluishgrey.png" height="50">
+        </div>
+
+        <div class="vertical-line">&nbsp;</div>
+
+        <div class="link-list">
+        <ul style="list-style: none; padding-left: 0;">
+            <li>
+            <a href="/contact.html">
+                <b>Inquire</b>
+            </a>
+            </li>
+            <li>
+            <a href="/privacy.html">
+                <b>Privacy</b>
+            </a>
+            </li>
+        </ul>
+        </div>
+
+        <div class="vertical-line">&nbsp;</div>
+
+        <div>
+        <a href="https://bsky.app/profile/comrades.sbs">
+            <img src="/assets/images/bsky-logo.webp" height="25" width="25">
+        </a>
+        </div>
+    </div>
+
+    <div>
+        <hr>
+        <p>The RTC is a technical association dedicated to [INSERT JOKE].</p>
+        <p>↫ This site dedicated to the Public Domain via Creative Commons 1.0 Universal.</p>
+    </div>
+    </div>
+</div>
+
+<script src="/scripts/topmenu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to remove metadata from pictures | Revolutionary Technical Collective</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/site.webmanifest">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+    <meta property="og:url" content="https://comrades.sbs/">
+    <meta property="og:title" content="How to remove metadata from pictures | Revolutionary Technical Collective">
+    <meta property="og:description" content=""/>
+    <meta property="og:site_name" content="Revolutionary Technical Collective">
+
+    <link rel="stylesheet" href="/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Knewave&display=swap" rel="stylesheet">
+</head><body><div id="topbar">
+  <div class="rtc-logo">
+      <a href="/index.html">
+          <img src="/assets/images/rtclogo.png" width="83" height="42">
+      </a>
+  </div>
+  <div class="topbar-link">
+      <a href="/periodical.html">TEXTS</a>
+  </div>
+
+  <div class="topbar-link">
+      <a href="/support.html">DONATE</a>
+  </div>
+
+  <div class="topbar-link">
+      <a href="/contact.html">INQUIRE</a>
+  </div>
+
+  <div class="topbar-link">
+      <a href="/join.html">CONTRIBUTE</a>
+  </div>
+</div><div class="main-body">
+      <div class="header">
+        <h1>How to remove metadata from pictures</h1>
+        <p style="font-size: 12pt;"></p>
+        <hr>
+      </div>
+      <p>From time to time, when a new protest movement reaches full force, it is important to remember the most practical aspects of operational security. This article deals with EXIF data, and how it can be used to compromise you. Much of this is an excerpt from a larger guide which we have taken out of publication, and which will later be reworked into a much more comprehensive book on the topic of operational security.</p>
+
+<p>Let us begin our example with a short explanation. Most pictures taken on smartphones today contain an extensive amount of data about the photographic device, using a metadata format called EXIF (Exchangeable Image File Format). While some vendors are beginning to ommit the fields which can expose someone the most, such as GPS data, a smartphone model number may be enough to implicate you in participating in a protest (which the bourgeois state has already determined is a crime to be punished with torture and bomb threats by right-wing groups).</p>
+
+<p>This poses an obvious security issue, and it has been treated as such. Most social media and blogging platforms today remove EXIF data from published images. However, this is not a guarantee that they aren’t keeping the data for themselves. This problem extends beyond major platforms and onto self-hosted ones. For example, in Wordpress, metadata removal in full-sized images is handled by third-party plugins, which means an attacker could introduce a compromised plugin to extract and store EXIF data.</p>
+
+<p>But what metadata may a picture contain, exactly? That depends on the device it’s taken on, but for presentation purposes, let us take an image from the Git repository located at <a href="https://github.com/ianare/exif-samples">https://github.com/ianare/exif-samples</a>, at <code class="language-plaintext highlighter-rouge">jpg/gps/DSCN0010.jpg</code>:</p>
+
+<p><img src="/assets/postimg/DSCN0010.jpg" alt="Our demonstration image, a simple house in the midst of some greenery" /></p>
+
+<p>A nice picture. Now, we ask ourselves: how do we inspect, and how do we remove, EXIF data from this image? For this, we will need a personal computer with a utility called <code class="language-plaintext highlighter-rouge">exiftool</code>. This utility can, to our knowledge, only be obtained on Unix-like operating systems, such as Linux. If you are on Windows, you will need to activate the Windows Subsystem for Linux (there are tutorials about this in other places online). If you are new to technical computing, this may intimidate you into using an online service, which may or may not harvest data from your pictures. We ask that you don’t be discouraged, as safety often comes at the cost of convenience.</p>
+
+<p>If you are on Debian, or a Debian-based Linux distribution, such as Ubuntu, you may install <code class="language-plaintext highlighter-rouge">exiftool</code> with the following command (invoking <code class="language-plaintext highlighter-rouge">sudo</code> for administrator privileges):</p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo apt install exiftool</code></p>
+
+<p>With the tool installed, assuming the directory we are in is the same directory the image is located, let’s open a terminal window and inspect the image’s EXIF data:</p>
+
+<p><code class="language-plaintext highlighter-rouge">exiftool DSCN0010.jpg</code></p>
+
+<p>The output is long, presented in plain-text, and contains more metadata than the one contained in the EXIF data itself, but are the critical parts, compiled into a spreadsheet for ease-of-viewing:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>GPS Latitude Ref</td>
+      <td>North</td>
+    </tr>
+    <tr>
+      <td>GPS Longitude Ref</td>
+      <td>East</td>
+    </tr>
+    <tr>
+      <td>GPS Altitude Ref</td>
+      <td>Above Sea Level</td>
+    </tr>
+    <tr>
+      <td>GPS Time Stamp</td>
+      <td>14:27:07.24</td>
+    </tr>
+    <tr>
+      <td>GPS Satellites</td>
+      <td>06</td>
+    </tr>
+    <tr>
+      <td>GPS Map Datum</td>
+      <td>WGS-84</td>
+    </tr>
+    <tr>
+      <td>GPS Date Stamp</td>
+      <td>2008:10:23</td>
+    </tr>
+    <tr>
+      <td>GPS Date/Time</td>
+      <td>2008:10:23 14:27:07.24Z</td>
+    </tr>
+    <tr>
+      <td>GPS Latitude</td>
+      <td>43 deg 28’ 2.81” N</td>
+    </tr>
+    <tr>
+      <td>GPS Longitude</td>
+      <td>11 deg 53’ 6.46” E</td>
+    </tr>
+    <tr>
+      <td>Circle of Confusion</td>
+      <td>0.006 mm</td>
+    </tr>
+    <tr>
+      <td>Field of View</td>
+      <td>18.3 deg</td>
+    </tr>
+    <tr>
+      <td>GPS Position</td>
+      <td>43 deg 28’ 2.81” N, 11 deg 53’ 6.46” E</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Not good! Using this information, we can pinpoint this image to the northern end of Parco della Fortezza Medicea, Arezzo, Tuscany, Italy. And if we actually put in the effort, we could probably figure out the exact angle it was taken from.</p>
+
+<p>Thankfully, we can remove all this undesired data with a simple parameter in <code class="language-plaintext highlighter-rouge">exiftool</code>:</p>
+
+<p><code class="language-plaintext highlighter-rouge">exiftool -all=DSCN0010.png</code></p>
+
+<p>Now, this image has no compromising metadata, and can be safely published. If we were to re-examine the metadata after running this command, we would find nothing useful.</p>
+
+    </div><div class="bottombar" style="padding-bottom: 6px;">
+    <div style="background-color: black; height: 6px;"><br></div>
+
+    <div class="bottom-text-content">
+      
+      <div class="bottom-flex-content">
+        <div class="bottombar-logo">
+            <img src="/assets/images/rtclogobluishgrey.png" height="50">
+        </div>
+
+        <div class="vertical-line">&nbsp;</div>
+
+        <div class="link-list">
+          <ul style="list-style: none; padding-left: 0;">
+            <li>
+              <a href="/contact.html">
+                <b>Inquire</b>
+              </a>
+            </li>
+            <li>
+              <a href="/privacy.html">
+                <b>Privacy</b>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="vertical-line">&nbsp;</div>
+
+        <div>
+          <a href="https://bsky.app/profile/comrades.sbs">
+            <img src="/assets/images/bsky-logo.webp" height="25" width="25">
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <hr>
+        <p>The Revolutionary Technical Collective is a correspondence and publishing group which utilizes technical knowledge to amplify communist agitation and propaganda.</p>
+        <p>↫ This site dedicated to the Public Domain via Creative Commons 1.0 Universal.</p>
+      </div>
+    </div>
+</div></body>
+</html>

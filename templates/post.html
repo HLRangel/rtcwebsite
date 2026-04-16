@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  {{ include templates/head.html }}
+
+  <body>
+    {{ include templates/topbar.html }}
+
+    <div class="main-body">
+        <div class="posttop">
+          <h1 style="text-align: left;">{{ var title }}</h1>
+          <p>{{ var description }}</p>
+
+          {{ ifdef page_image
+            <img src="/{{ var page_image }}">
+          }}
+          <hr>
+        </div>
+
+        <div class="genpost">
+          {{ var docdata }}
+        </div>
+    </div>
+        
+    {{ include templates/bottombar.html }}
+  </body>
+
+  <script src="/scripts/print_article.js"></script>
+</html>
