@@ -130,7 +130,7 @@ function big_box() {
 }
 
 function show_box_or_redir(url, date) {
-    if(window.location.host != "rtc.comrades.sbs") {
+    if((window.location.host != "rtc.comrades.sbs") && (window.location.host != "127.0.0.1:5000")) {
         var today = new Date(Date.now());
 
         if((today.getTime() / 1000) > 1768100399) {
