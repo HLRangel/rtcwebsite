@@ -162,8 +162,16 @@ table, th, td {
     padding: 5px 10px 10px 10px;
     border-style: dashed;
     border-width: 1px;
+    border-radius: 8px;
     border-color: #253031;
     margin-bottom: 20px;
+    background-color: rgba(54, 54, 54, 0.1);
+    box-shadow: rgba(31, 30, 30, 0.2) 7px 7px 20px;
+    transition: 0.3s;
+}
+
+.news-container:hover {
+    background-color: rgba(141, 141, 141, 0.2);
 }
 
 .news-container h3 {
