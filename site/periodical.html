@@ -28,29 +28,32 @@
           {{ iter_base {{ reverse_base_order {{ var articles_base }} }}
             {{ set path "/articles/article-{{ var datestamp }}.html" }}
 
-            <div class="news-container">
-              {{ ifdef realpath
-                <h3><a href="{{ var realpath }}">{{ var title }}</a></h3>
-              }}
-              
-              {{ ifndef realpath
-                {{ gen_doc_from_template {{ var path }} "templates/post.html" }}
-                <h3><a href="{{ var path }}">{{ var title }}</a></h3>
-              }}
+            {{ ifdef realpath
+              <a href="{{ var realpath }}" class="news-div">
+            }}
+            
+            {{ ifndef realpath
+              {{ gen_doc_from_template {{ var path }} "templates/post.html" }}
+              <a href="{{ var path }}" class="news-div">
+            }}
 
-              <hr>
+              <div class="news-container">
+                <h3>{{ var title }}</h3>
 
-              <p class="small">Published on the {{ var date }}</p>
-                <details>
-                  <summary class="small">Additional details</summary>
+                <hr>
 
-                  {{ ifdef realpath
-                    <p class="small">This article is a simple HTML page, transitioned over from a previous version of the site. It may look outdated in comparison to all other content.</p>
-                  }}
+                <p class="small">Published on the {{ var date }}</p>
+                  <details>
+                    <summary class="small">Additional details</summary>
 
-                  <p class="small">Datestamp: {{ var datestamp }}</p>
-                </details>
-            </div>
+                    {{ ifdef realpath
+                      <p class="small">This article is a simple HTML page, transitioned over from a previous version of the site. It may look outdated in comparison to all other content.</p>
+                    }}
+
+                    <p class="small">Datestamp: {{ var datestamp }}</p>
+                  </details>
+              </div>
+            </a>
           }}
 
         </div>
