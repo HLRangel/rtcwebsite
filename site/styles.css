@@ -8,6 +8,7 @@
     width: 80%;
     padding-top: 10px;
     margin: auto;
+    margin-top: 20px;
     font-size: 15pt;
     color: #253031;
     min-height: calc(100vh - 15rem);
@@ -351,6 +352,13 @@ table, th, td {
     margin-right: 13px;
 }
 
+.bottom-row-stuff {
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    display: flex;
+}
+
 .pa-support-banner {
     border-style: solid;
     border-width: 1px;
@@ -385,6 +393,64 @@ table, th, td {
    min-width: 25%;
 }
 
+.email-join-banner {
+    margin-right: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    border-color: black;
+
+    width: 75%;
+    background-color: rgba(54, 54, 54, 0.1);
+    box-shadow: rgba(31, 30, 30, 0.2) 7px 7px 20px;
+    transition: 0.3s;
+
+    padding: 10px 10px 5px 10px;
+
+    align-content: center;
+    align-items: center;
+}
+
+.email-join-banner p {
+    margin: 0 0 0 0;
+    margin-top: 5px;
+    margin-bottom: 7px;
+
+    font-size: 12pt;
+}
+
+.email-join-banner h3 {
+    font-size: 16pt;
+}
+
+.email-entry-field {
+    width: 70%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(41, 41, 41);
+}
+
+.email-entry-button {
+    background-color: rgb(70, 131, 78);
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 600;
+    font-size: 12;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+.email-entry-button:hover {
+    background-color: rgb(70, 91, 131);
+    box-shadow: none;
+}
+
 @media (max-width: 800px) {
     .news-container {
         width: 95%;
@@ -396,6 +462,36 @@ table, th, td {
 
     .topbar-link {
         display: none;
+    }
+
+    .big-news-banner {
+        padding: 0px 0px 5px 0px;
+
+        display: block
+    }
+
+    .big-news-details p {
+        padding: 5px 10px 5px 10px
+    }
+
+    .big-news-details h3 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .big-news-details small {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .big-news-banner img {
+        min-width: 100%;
+        border-radius: 2px;
+    }
+
+    .big-news-picture {
+        margin-right: 0;
     }
 }
 
