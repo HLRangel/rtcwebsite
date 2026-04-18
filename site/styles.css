@@ -467,7 +467,7 @@ table, th, td {
     .big-news-banner {
         padding: 0px 0px 5px 0px;
 
-        display: block
+        display: block;
     }
 
     .big-news-details p {
@@ -492,6 +492,19 @@ table, th, td {
 
     .big-news-picture {
         margin-right: 0;
+    }
+
+    .bottom-row-stuff {
+        display: block;
+    }
+
+    .email-join-banner {
+        width: auto;
+    }
+
+    .pa-support-banner {
+        margin-top: 10px;
+        width: auto;
     }
 }
 
