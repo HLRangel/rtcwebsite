@@ -359,13 +359,18 @@ table, th, td {
     display: flex;
 }
 
+.bottom-row-stuff a {
+    text-decoration: none;
+}
+
 .pa-support-banner {
+    font-family: "Anton SC", serif;
+
     border-style: solid;
     border-width: 1px;
     border-radius: 8px;
     border-color: black;
 
-    width: 25%;
     background-color: rgba(54, 54, 54, 0.1);
     box-shadow: rgba(31, 30, 30, 0.2) 7px 7px 20px;
     transition: 0.3s;
@@ -378,14 +383,19 @@ table, th, td {
     display: flex;
 }
 
+.pa-support-banner:hover {
+    background-color: rgba(141, 141, 141, 0.3);
+}
+
 .pa-support-ico {
     margin: auto;
     margin-right: 10px;
 }
 
 .pa-support-text {
+    text-decoration: none;
     font-weight: 800;
-    color: black;
+    color: #C61010;
 }
 
 .pa-support-ico img {
@@ -450,6 +460,7 @@ table, th, td {
     background-color: rgb(70, 91, 131);
     box-shadow: none;
 }
+
 
 @media (max-width: 800px) {
     .news-container {
