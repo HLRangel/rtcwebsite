@@ -8,6 +8,8 @@ datestamp# 20250926
 page_image# assets/images/yarvhajj.png
 
 invisible# yes
+
+highlighted# yes
 ---
 
 When the United States' present administration got into office, the media latched onto Curtis Yarvin as a hidden mastermind behind its clear incompetence, and spent a couple weeks churning out articles about him – including that embarrassing *New York Times* interview. This revealed a clear understanding of the NYT’s thoughts, and indeed of the thoughts of the mainstream media at large when it comes to these figures, whose critiques, no matter how weak, always threaten to bring down the house of cards that is the liberal defense of managed democracy as an apt alternative to totalitarianism, or even the notion that it is an alternative at all.

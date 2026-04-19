@@ -9,29 +9,56 @@
     {{ include templates/topbar.html }}
 
     <div class="main-body">
-      <div class="big-news-banner">
-        <div class="big-news-picture">
-          <img src="/assets/images/untogod.png" width="">
-        </div>
 
-        <div class="big-news-details">
-          <h3>Testing fox lazy</h3>
+      {{ iter_dir articles
+        {{ add_document {{ var filepath }} "articles" }}
+      }}
 
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias consequatur cupiditate totam ullam quos nemo maiores aliquam, nulla rerum provident dolorem ipsa quia officia, cum vel dolor esse nesciunt a!</p>
+      {{ produce_base "articles" }}
 
-          <hr>
+      {{ set articles_base {{ cutbase_extension "md" {{ load_base "articles" }} }} }}
 
-          <small>Some additional details here.</small>
-        </div>
+      {{ set articles_base {{ sortbase_by_key "datestamp" {{ var articles_base }} }} }}
 
-      </div>
+      {{ iter_base {{ reverse_base_order {{ var articles_base }} }}
+        {{ set path "/articles/article-{{ var datestamp }}.html" }}
+
+        {{ ifdef highlighted
+          <a href="{{ var path }}" style="text-decoration: none;">
+            <div class="big-news-banner">
+
+              {{ ifdef page_image
+                <div class="big-news-picture">
+                  <img src="{{ var page_image }}" width="">
+                </div>
+              }}
+
+              <div class="big-news-details">
+                <h3>{{ var title }}</h3>
+
+                {{ ifdef description
+                  <p>{{ var description }}</p>
+                }}
+
+                {{ ifndef description 
+                  <p>This article lacks a description!</p>
+                }}
+
+                <hr>
+
+                <small>Some additional details here.</small>
+              </div>
+            </div>
+          </a>
+        }}
+      }}
 
       <div class="bottom-row-stuff">
         <div class="email-join-banner">
           <div class="email-join-para">
-            <h3>Let's start sharing</h3>
+            <h3 data-trans="lets-start-sharing">Let's start sharing</h3>
 
-            <p>Register to access our knowledge base about open licensing and talk within community spaces.</p>
+            <p data-trans="register-to-access">Register to access our knowledge base about open licensing and talk within community spaces.</p>
           </div>
 
           <div class="email-join-form">
@@ -48,18 +75,18 @@
               <img src="/assets/images/pa-person.png">
             </div>
 
-            <div class="pa-support-text">
+            <div class="pa-support-text" data-trans="donate-against-genocide">
               <h3>DONATE AGAINST GENOCIDE</h3>
             </div>
           </div>
         </div>
       </a>
 
-      <h2 id="redistribute-transform-copy">Redistribute, Transform, Copy!</h2>
+      <h2 data-trans="redistribute-transform-copy">Redistribute, Transform, Copy!</h2>
 
-      <p>The RTC is an association which defends the extinction of our rentier mode of production, taking part in education, propaganda, and agitation, attempting to create a soft alternative to bourgeois technical associations focused on lobbying. Anyone who is interested may feed into the engine of political development.</p>
+      <p data-trans="the-rtc-is-a-collective">The RTC is a collective which defends the total abolition of copyright law and analyses its position within the capitalist mode of production. We are the antithesis of groups like the Association of American Publishers and the and the Authors Guild, seeking to educate and lobby against the tyranny of  what we call monopolistic rent titles.</p>
 
-      <p>There is no notion of formal membership, and one merely contributes to the RTC. <a href="/join.html">Find out more in our “Contribute” page</a>.</p>
+      <p data-trans="we-adopt-a-form">We adopt a form of "soft membership", welcoming everyone, from those with an enthusiastic drive to volunteer to those who just want to help on rare occasions. <a href="/join.html">Find out more in our “Contribute” page</a>.</p>
     </div>
         
     {{ include templates/bottombar.html }}
