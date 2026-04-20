@@ -104,6 +104,19 @@ table, th, td {
     margin-right: 15px;
 }
 
+.selectors {
+    float: right;
+    margin-left: auto;
+    display: flex;
+}
+
+.lang-selector {
+    color: white;
+    float: right;
+    margin-left: auto;
+    font-weight: 800;
+}
+
 .burguer-menu {
     color: white;
     float: right;
@@ -460,6 +473,7 @@ table, th, td {
     background-color: rgb(70, 91, 131);
     box-shadow: none;
 }
+
 
 
 @media (max-width: 800px) {
