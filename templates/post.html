@@ -5,15 +5,14 @@
   <body>
     {{ include templates/topbar.html }}
 
-    <div class="main-body">
-        <div class="posttop">
-          <h1 style="text-align: left;">{{ var title }}</h1>
-          <p>{{ var description }}</p>
+    {{ ifdef page_image
+      <div class="post-big-banner" style="background-image: url('/{{ var page_image }}');"></div>
+    }}
 
-          {{ ifdef page_image
-            <img src="/{{ var page_image }}">
-          }}
-          <hr>
+    <div class="main-body">
+        <div class="posttop" >
+          <h1>{{ var title }}</h1>
+          <p>{{ var date }} {{ ifdef description \ ∘ <span style="color:gray; font-style:italic;"> {{ var description}}</span>}}</p>
         </div>
 
         <div class="genpost">

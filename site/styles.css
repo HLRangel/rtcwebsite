@@ -236,23 +236,18 @@ table, th, td {
 }
 
 .posttop {
-    width: 55%;
+    width: 100%;
+    margin-bottom: 5vh;
 }
 
 .posttop p {
+    color: #444444;
     margin: 0 0 0 0;
-    margin-bottom: 20px;
 }
 
-.posttop h1{
-    font-size: 24pt;
+.posttop h1 {
     margin: 0 0 0 0;
-    margin-bottom: 5px;
-    margin-top: 2vh;
-}
-
-.posttop hr {
-    margin-bottom: 5vh;
+    font-size: 26pt
 }
 
 .posttop img {
@@ -263,6 +258,24 @@ table, th, td {
 
 .post-listings {
     margin-top: 3vh;
+}
+
+.post-big-banner {
+    width: 100%;
+    height: 35vh;
+    background-image: url("/assets/images/untogod.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    filter: blur(7px);
+
+    transition: 0.3s;
+}
+
+.post-big-banner:hover:active {
+    filter: none;
+    height: 100vh;
 }
 
 .palestinewarn {
@@ -416,6 +429,24 @@ table, th, td {
    min-width: 25%;
 }
 
+.normal-join-banner {
+    margin-right: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    border-color: black;
+
+    width: 75%;
+    background-color: rgba(54, 54, 54, 0.1);
+    box-shadow: rgba(31, 30, 30, 0.2) 7px 7px 20px;
+    transition: 0.3s;
+
+    padding: 10px 10px 5px 10px;
+
+    align-content: center;
+    align-items: center;
+}
+
 .email-join-banner {
     margin-right: 10px;
     border-style: solid;
@@ -449,6 +480,7 @@ table, th, td {
 .email-entry-field {
     width: 70%;
     border-radius: 5px;
+    padding: 4px 5px 4px 5px;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(41, 41, 41);
