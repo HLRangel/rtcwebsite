@@ -329,16 +329,23 @@ table, th, td {
     text-decoration: none;
 }
 
-.big-news-banner {
+.fluid-banner {
     border-style: solid;
     border-width: 1px;
     border-radius: 8px;
     border-color: black;
-
+    
     background-color: rgba(54, 54, 54, 0.1);
     box-shadow: rgba(31, 30, 30, 0.2) 7px 7px 20px;
-    transition: 0.3s;
 
+    transition: 0.3s;
+}
+
+.fluid-banner:hover {
+    background-color: rgba(141, 141, 141, 0.3);
+}
+
+.big-news-banner {
     padding: 10px 10px 5px 10px;
 
     display: flex;
@@ -370,10 +377,6 @@ table, th, td {
     margin-bottom: 0;
 }
 
-.big-news-banner:hover {
-    background-color: rgba(141, 141, 141, 0.3);
-}
-
 .big-news-picture {
     margin-right: 13px;
 }
@@ -392,25 +395,12 @@ table, th, td {
 .pa-support-banner {
     font-family: "Anton SC", serif;
 
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 8px;
-    border-color: black;
-
-    background-color: rgba(54, 54, 54, 0.1);
-    box-shadow: rgba(31, 30, 30, 0.2) 7px 7px 20px;
-    transition: 0.3s;
-
     padding: 10px 10px 5px 10px;
 
     align-content: center;
     align-items: center;
 
     display: flex;
-}
-
-.pa-support-banner:hover {
-    background-color: rgba(141, 141, 141, 0.3);
 }
 
 .pa-support-ico {
@@ -430,16 +420,9 @@ table, th, td {
 }
 
 .normal-join-banner {
+    width: 85%;
+    
     margin-right: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 8px;
-    border-color: black;
-
-    width: 75%;
-    background-color: rgba(54, 54, 54, 0.1);
-    box-shadow: rgba(31, 30, 30, 0.2) 7px 7px 20px;
-    transition: 0.3s;
 
     padding: 10px 10px 5px 10px;
 
@@ -448,16 +431,9 @@ table, th, td {
 }
 
 .email-join-banner {
-    margin-right: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 8px;
-    border-color: black;
-
     width: 75%;
-    background-color: rgba(54, 54, 54, 0.1);
-    box-shadow: rgba(31, 30, 30, 0.2) 7px 7px 20px;
-    transition: 0.3s;
+
+    margin-right: 10px;
 
     padding: 10px 10px 5px 10px;
 
@@ -505,7 +481,6 @@ table, th, td {
     background-color: rgb(70, 91, 131);
     box-shadow: none;
 }
-
 
 
 @media (max-width: 800px) {
