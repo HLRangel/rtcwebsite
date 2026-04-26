@@ -173,7 +173,7 @@ table, th, td {
 
 .news-container {
     width: 600px;
-    padding: 5px 10px 10px 10px;
+    padding: 7px 10px 5px 10px;
     border-style: dashed;
     border-width: 1px;
     border-radius: 8px;
@@ -182,6 +182,8 @@ table, th, td {
     background-color: rgba(54, 54, 54, 0.1);
     box-shadow: rgba(31, 30, 30, 0.2) 7px 7px 20px;
     transition: 0.3s;
+
+    display: flex;
 }
 
 .news-container:hover {
@@ -190,6 +192,7 @@ table, th, td {
 
 .news-container h3 {
     margin: 0 0 0 0;
+    min-height: 66px;
 }
 
 .news-container p {
@@ -206,6 +209,15 @@ table, th, td {
 
 .news-container details p {
     margin-top: 10px;
+}
+
+.news-picture img {
+    max-width: 170px;
+    max-height: 170px;
+
+    margin-right: 13px;
+
+    border-radius: 8px;
 }
 
 .news-div {
@@ -375,10 +387,6 @@ table, th, td {
 
 .big-news-banner hr {
     margin-bottom: 0;
-}
-
-.big-news-picture {
-    margin-right: 13px;
 }
 
 .bottom-row-stuff {

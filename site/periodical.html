@@ -38,20 +38,28 @@
             }}
 
               <div class="news-container">
-                <h3>{{ var title }}</h3>
+                {{ ifdef page_image 
+                  <div class="news-picture">
+                    <img src="/{{ var page_image }}">
+                  </div>
+                }}
 
-                <hr>
+                <div class="news-details">
+                  <h3>{{ var title }}</h3>
 
-                <p class="small">Published on the {{ var date }}</p>
-                  <details>
-                    <summary class="small">Additional details</summary>
+                  <hr>
 
-                    {{ ifdef realpath
-                      <p class="small">This article is a simple HTML page, transitioned over from a previous version of the site. It may look outdated in comparison to all other content.</p>
-                    }}
+                  <p class="small">Published on the {{ var date }}</p>
+                    <details>
+                      <summary class="small">Additional details</summary>
 
-                    <p class="small">Datestamp: {{ var datestamp }}</p>
-                  </details>
+                      {{ ifdef realpath
+                        <p class="small">This article is a simple HTML page, transitioned over from a previous version of the site. It may look outdated in comparison to all other content.</p>
+                      }}
+
+                      <p class="small">Datestamp: {{ var datestamp }}</p>
+                    </details>
+                </div>
               </div>
             </a>
           }}
