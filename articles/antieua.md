@@ -7,6 +7,8 @@ date# January 7, 2026
 datestamp# 202601073
 
 new_filenames# yes
+
+page_image# assets/images/invasion.avif
 ---
 
 The RTC opposes the US aggression against the Venezuelan proletariat, which this Saturday discovered the horrors of "surgical bombings," a favorite tactic of NATO's "humanized wars," responsible for claiming more than 1 million civilian lives [1] in the 21st century alone. The UN spoke a thousand words with its silence, revealing its status as a satellite organization of imperialism and the chief charlatan of "international law," which serves only as a mechanism for the sacrifice of exceptionally cruel individuals on the butchering table of the Law in service to the "national reputation" of the executioners.

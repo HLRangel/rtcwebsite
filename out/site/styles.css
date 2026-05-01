@@ -227,6 +227,14 @@ table, th, td {
     text-decoration: none;
 }
 
+.news-details p {
+    font-size: 12pt;
+}
+
+.news-details .small {
+    font-size: 10pt;
+}
+
 .stub {
     text-decoration: dotted;
 }
@@ -375,6 +383,8 @@ table, th, td {
 .big-news-banner img {
     max-width: 200px;
     max-height: 200px;
+
+    margin-right: 12px;
 
     border-radius: 2px;
 }

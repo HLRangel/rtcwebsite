@@ -47,6 +47,10 @@
                 <div class="news-details">
                   <h3>{{ var title }}</h3>
 
+                  {{ ifdef description
+                    <p>{{ var description }}</p>
+                  }}
+                  
                   <hr>
 
                   <p class="small">Published on the {{ var date }}</p>

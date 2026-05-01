@@ -5,6 +5,8 @@ date# 1st of June, 2024
 datestamp# 20240601
 
 description# A text by Quinterna, translated by the Solar Collective with notes by the RTC.
+
+page_image# assets/images/wales.avif
 ---
 
 > The online encyclopaedia Wikipedia is an impressive example of global collective intelligence in operation. Its entries aggregate editorial interventions according to a simple stochastic mechanism. This study shows that there is a strong correlation between the number of interventions and the quality of the entries. Topics of particular interest or relevance are thus brought to the foreground quite naturally. This is particularly significant since 1) Wikipedia is often used as a source of information and 2) other major collaborative phenomena such as software development, industrial design and total quality are all known to be a source of increasingly ambiguous results as the size of the project grows.

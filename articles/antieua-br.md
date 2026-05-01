@@ -7,6 +7,8 @@ date# 7th of January, 2026
 datestamp# 202601074
 
 new_file_names# yes
+
+page_image# assets/images/invasion.avif
 ---
 
 O CTR se opõe à agressão norte-americana contra o proletariado venezuelano, que neste sábado descobriu o horror dos "bombardeios cirúrgicos", uma tática favorita das "guerra humanizadas" da OTAN, responsáveis por ceifar mais de 1 milhão de almas civís [1] só no século XXI. A ONU falou mil palavras com seu silêncio, deixando escancarado seu status como organização-satélite do imperialismo e farsante-mor do "direito internacional", que serve somente como um mecanismo para o sacrifício de indivíduos unicamente cruéis ao altar do Direito em serviço a reputação de suas nações.

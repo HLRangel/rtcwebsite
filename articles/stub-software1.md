@@ -3,4 +3,5 @@ title# Software, monopoly and production costs, and the Microsoft Case (December
 realpath# /articles/translations/2023/10/01/software1.html
 date# 1st of October, 2023
 datestamp# 20231001
+page_image# assets/images/gates.avif
 ---
