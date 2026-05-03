@@ -19,7 +19,7 @@ async function translate_tolang(id) {
 }
 
 function deleteLanguage() {
-    document.cookie = "lang=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    document.cookie = "lang=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
 }
 
 function setLanguage(id) {
@@ -33,8 +33,6 @@ function getLangCookie() {
     cookies = cookies.split(";");
 
     for(let cookie of cookies) {
-
-        console.log(cookie);
         cookie = cookie.split("=");
         
         if(cookie[0] == "lang") {
@@ -58,7 +56,7 @@ function switchLanguage() {
 
     if(lang != null) {
         deleteLanguage();
-        location.reload()
+        location.reload();
     } else {
         setLanguage("br");
     }
