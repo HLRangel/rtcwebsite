@@ -8,6 +8,45 @@
       .small{
         font-size: 12px;
       }
+
+      .bottom-div-join {
+        min-width: 100%;
+        min-height: 50vh;
+        background-color: rgb(177, 54, 54);
+        padding-top: 7vh;
+
+        color: white;
+
+        font-family: "Atkinson Hyperlegible";
+      }
+
+      .bottom-div-inners {
+        width: 70%;
+        padding-left: 20px;
+      }
+
+      .bottom-div-text h2 {
+        margin: 0 0 0 0;
+        font-size: 24pt;
+        text-shadow: 5px 5px 10px rgba(53, 53, 53, 0.4);
+      }
+
+      .bottom-div-text p {
+        font-size: 13pt;
+      }
+
+      .bottom-div-insert input[type=email] {
+        border-radius: 16px;
+        border-width: 1px;
+        border-style: solid;
+        background-color: rgba(0, 0, 0, 0.1);
+        width: 70%;
+        height: 40px;
+      }
+
+      .bottom-div-smalltext p {
+        margin: 0 0 0 0;
+      }
   </style>
 
   <body>
@@ -21,6 +60,27 @@
       <p>Before joining, we ask that you carefully read the <a href="/org/guidelines.html">Guidelines</a>, a statute that defines, among other things, the good conduct expected out of every member within RTC spaces. We did our best to make them understandable by everyone!</p>
 
       <p><b>Memberships are currently only open via invitation. Please contact the e-mail in the Contact section if you wish to join!</b></p>
+    </div>
+
+    <div class="bottom-div-join">
+        <div class="bottom-div-inners">
+          <div class="bottom-div-text">
+            <h2>Let's get started.</h2>
+            <p>If you agree with us, it's time to become one of us. Just submit your e-mail and you'll join our lists; from there, it's only a matter of time until you come across a community link.</p>
+          </div>
+
+          <div class="bottom-div-insert">
+            <form>
+              <input type="email" id="email" name="emailname">
+            </form> 
+          </div>
+
+          <div class="bottom-div-smalltext">
+            <p><small>! RTC membership is only open to those above 18 years of age. This will be verified non-intrusively by the Center for very sensitive matters.</small></p>
+
+            <p><small>!! By clicking "Submit", you agree to join the RTC's mailing list. We do not send spam there; it is an essential organizational tool.</small></p>
+          </div>
+        </div>
     </div>
         
     {{ include templates/bottombar.html }}
