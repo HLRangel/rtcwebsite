@@ -1,31 +1,36 @@
+:root {
+    --rtc-black: #253031;
+    --rtc-textfont: "Atkinson Hyperlegible", sans-serif;
+    --rtc-bigfont: "Anton SC", sans-serif;
+}
+
 @font-face {
     font-family: "Work Sans";
     src: url("/assets/fonts/WorkSans.ttf") format("truetype");
 }
 
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--rtc-textfont);
+    background-color: #FFFFFF;
+}
+
 .main-body{
-    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-family: var(--rtc-textfont);
     width: 80%;
     padding-top: 10px;
     margin: auto;
     margin-top: 20px;
     font-size: 15pt;
-    color: #253031;
+    color: var(--rtc-black);
     min-height: calc(100vh - 15rem);
     padding-bottom: 5vh;
 }
 
-.header{
-    font-family: "Atkinson Hyperlegible", sans-serif;
+.header {
     text-align: center;
-    color: #253031;
-}
-
-body{
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #FFFFFF;
+    color: var(--rtc-black);
 }
 
 a{
@@ -33,18 +38,20 @@ a{
 }
 
 a:hover{
-    color: #253031;
+    color: var(--rtc-black);
 }
+
 hr{
     border-color: antiquewhite;
 }
-.footer{
-    font-family: "Atkinson Hyperlegible", sans-serif;
+
+.footer {
     font-size: 13px;
     color: #FDFDFF;
     width: 80%;
     margin: auto;
 }
+
 .topbar-image{
     margin: auto;
     display: block;
@@ -59,7 +66,6 @@ hr{
 }
 
 .column-bottomlink-desc {
-    font-family: "Atkinson Hyperlegible", sans-serif;
     width: 50%;
     margin-top: 9px;
     float: right;
@@ -97,7 +103,7 @@ table, th, td {
 #topbar a {
     text-decoration: none;
     color:aliceblue;
-    font-family: "Anton SC", sans-serif;
+    font-family: var(--rtc-bigfont);
     text-transform: uppercase;
     font-size: 14pt;
     display: flex;
@@ -128,7 +134,6 @@ table, th, td {
     overflow: hidden;
     background-color: #eaeaea;
     width: 100%;
-    font-family: "Atkinson Hyperlegible", sans-serif;
     height: 15rem;
 }
 
@@ -144,6 +149,7 @@ table, th, td {
 }
 
 .bottom-text-content {
+    padding-top: 20px;
     margin: auto;
     width: 90%;
 }
@@ -171,23 +177,29 @@ table, th, td {
     margin-right: 12px;
 }
 
+.fluid-banner {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    border-color: black;
+    
+    background-color: rgba(54, 54, 54, 0.1);
+    box-shadow: rgba(31, 30, 30, 0.1) 7px 7px 20px;
+
+    transition: 0.3s;
+}
+
+.fluid-banner:hover {
+    background-color: rgba(141, 141, 141, 0.3);
+}
+
 .news-container {
     width: 600px;
     padding: 7px 10px 5px 10px;
-    border-style: dashed;
-    border-width: 1px;
-    border-radius: 8px;
-    border-color: #253031;
+    border-color: var(--rtc-black);
     margin-bottom: 20px;
-    background-color: rgba(54, 54, 54, 0.1);
-    box-shadow: rgba(31, 30, 30, 0.2) 7px 7px 20px;
-    transition: 0.3s;
 
     display: flex;
-}
-
-.news-container:hover {
-    background-color: rgba(141, 141, 141, 0.2);
 }
 
 .news-container h3 {
@@ -298,31 +310,6 @@ table, th, td {
     height: 100vh;
 }
 
-.palestinewarn {
-    text-align: center;
-    background-color: yellow;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.palestinewarn p {
-    margin: 0 0 0 0;
-    margin-bottom: 4px;
-}
-
-.palestinewarn a {
-    color: black;
-}
-
-.innerwarn {
-    width: 90%;
-}
-
-.venezuela {
-    background-color: rgb(231, 31, 31);
-    color: white;
-}
-
 .big-mobile-menu {
     position: fixed;
     
@@ -342,27 +329,11 @@ table, th, td {
 
 .big-mobile-link a {
     color: white;
-    font-family: "Anton SC", serif;
+    font-family: var(--rtc-bigfont);
 
     font-size: 26pt;
     font-weight: 800;
     text-decoration: none;
-}
-
-.fluid-banner {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 8px;
-    border-color: black;
-    
-    background-color: rgba(54, 54, 54, 0.1);
-    box-shadow: rgba(31, 30, 30, 0.2) 7px 7px 20px;
-
-    transition: 0.3s;
-}
-
-.fluid-banner:hover {
-    background-color: rgba(141, 141, 141, 0.3);
 }
 
 .big-news-banner {
@@ -411,7 +382,7 @@ table, th, td {
 }
 
 .pa-support-banner {
-    font-family: "Anton SC", serif;
+    font-family: var(--rtc-bigfont);
 
     padding: 10px 10px 5px 10px;
 
@@ -482,7 +453,6 @@ table, th, td {
 
 .email-entry-button {
     background-color: rgb(70, 131, 78);
-    font-family: "Atkinson Hyperlegible", sans-serif;
     font-weight: 600;
     font-size: 12;
     padding: 5px 10px 5px 10px;

@@ -14,6 +14,8 @@
     {{ include templates/topbar.html }}
 
     <div class="main-body">
+      <h2>Posts</h2>
+      
         <div class="post-listings">
           {{ iter_dir articles
             {{ add_document {{ var filepath }} "articles" }}
@@ -37,7 +39,7 @@
               <a href="{{ var path }}" class="news-div">
             }}
 
-              <div class="news-container">
+              <div class="fluid-banner news-container">
                 {{ ifdef page_image 
                   <div class="news-picture">
                     <img src="/{{ var page_image }}">
