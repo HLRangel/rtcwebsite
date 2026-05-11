@@ -46,9 +46,9 @@
 
       .bottom-div-join {
         min-width: 100%;
-        min-height: 50vh;
+        min-height: 400px;
         background-color: rgb(177, 54, 54);
-        padding-top: 7vh;
+        padding-top: 70px;
 
         color: white;
 
@@ -70,17 +70,61 @@
         font-size: 13pt;
       }
 
+      .bottom-div-insert input {
+        color: white;
+      }
+      
       .bottom-div-insert input[type=email] {
         border-radius: 16px;
         border-width: 1px;
         border-style: solid;
         background-color: rgba(0, 0, 0, 0.1);
-        width: 70%;
+        width: 100%;
         height: 40px;
+      }
+
+      .bottom-div-insert input[type=submit] {
+        border-radius: 8px;
+        border-width: 1px;
+        border-style: solid;
+        padding: 5px 10px 5px 10px;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 40px;
+
+        transition: 0.3s;
+      }
+
+      .bottom-div-insert input[type=submit]:hover {
+        background-color: white;
+        color: black;
+        border-color: black;
+        margin-left: 10px;
+        border-radius: 16px;
+        height: 50px;
+      }
+
+      .bottom-div-insert-flex {
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      .bottom-div-insert-flex div {
+        margin-right: 10px;
+      }
+
+      .bottom-div-insert-left {
+        width: 100%;
+      }
+
+      .bottom-div-insert-right {
+        margin: 0 0 0 0;
       }
 
       .bottom-div-smalltext p {
         margin: 0 0 0 0;
+        margin-top: 16px;
       }
   </style>
 
@@ -162,7 +206,15 @@
 
           <div class="bottom-div-insert">
             <form>
-              <input type="email" id="email" name="emailname">
+              <div class="bottom-div-insert-flex">
+                <div class="bottom-div-insert-left">
+                  <input type="email" id="email" name="emailname">
+                </div>
+
+                <div class="bottom-div-insert-right">
+                  <input type="submit" value="Submit">
+                </div>
+              </div>
             </form> 
           </div>
 
