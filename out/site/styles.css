@@ -470,6 +470,129 @@ table, th, td {
     box-shadow: none;
 }
 
+.decorated-header {
+    display: flex;
+    align-items: center;
+    align-content: center;        
+}
+
+.reason-graphic {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    transition: 0.3s;
+}
+
+.reason-graphic:hover {
+    filter: saturate();
+    transform: rotate(13deg);
+}
+
+.reason-graphic img {
+    width: calc(1933px / 15);
+    height: calc(908px / 15);
+}
+
+.small{
+    font-size: 12px;
+}
+
+.bottom-div-join {
+    min-width: 100%;
+    min-height: 380px;
+    background-image: url("/assets/images/aviator.avif");
+    background-position: center;
+    padding-top: 100px;
+
+    color: white;
+
+    font-family: "Atkinson Hyperlegible";
+}
+
+.bottom-div-inners {
+    width: 70%;
+    padding-left: 30px;
+}
+
+.bottom-div-text h2 {
+    margin: 0 0 0 0;
+    font-size: 24pt;
+    text-shadow: 5px 5px 10px rgba(53, 53, 53, 0.4);
+}
+
+.bottom-div-text p {
+    font-size: 13pt;
+}
+
+.bottom-div-insert input {
+    color: white;
+}
+
+.bottom-div-insert input[type=email] {
+    border-radius: 16px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 40px;
+}
+
+.bottom-div-insert input[type=submit] {
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px 10px 5px 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 40px;
+
+    transition: 0.3s;
+}
+
+.bottom-div-insert input[type=submit]:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+    margin-left: 10px;
+    border-radius: 16px;
+    height: 50px;
+}
+
+.bottom-div-insert-flex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bottom-div-insert-flex div {
+    margin-right: 10px;
+}
+
+.bottom-div-insert-left {
+    width: 100%;
+}
+
+.bottom-div-insert-right {
+    margin: 0 0 0 0;
+}
+
+.bottom-div-smalltext p {
+    margin: 0 0 0 0;
+    margin-top: 16px;
+}
+
+.see-statute-button {
+    padding: 10px 15px 10px 15px;
+
+    background-color: rgb(194, 57, 57);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    box-shadow: rgba(0, 0, 0, 0.151) 4px 4px 10px;
+}
 
 @media (max-width: 800px) {
     .news-container {

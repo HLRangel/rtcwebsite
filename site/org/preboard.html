@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+  {{ set title "Joining" }}
+  {{ include templates/head.html }}
+
+  <style>
+      .small{
+        font-size: 12px;
+      }
+  </style>
+
+  <body>
+    {{ include templates/topbar.html }}
+
+    <div class="main-body">
+      <h2>Almost there!</h2>
+
+      <p>Before you join, it is required that you read the <a href="/org/guidelines.html">Statute of the RTC</a>, which sets out the basic bureaucracy of the group. Even if you'd rather just skim through that, it is <i><b>really important</b></i> that you read the <a href="/org/coc.html">Code of Conduct</a>, which sets up important guidelines for behavior within the group.</a></p>
+
+      <div class="preboard-join-form">
+        <form action="/actions/signup.html">
+          <input type="checkbox" name="agebox" required>
+          <label for="agebox">I acknowledge that I am 18 years old and that this will be verified non-intrusively in case I have to engage in sensitive proceedings.</label><br>
+          
+          <input type="checkbox" name="statbox" required>
+          <label for="statbox">I acknowledge that I have read the Statute.</label><br>
+          
+          <input type="checkbox" name="cocbox" required>
+          <label for="cocbox">I acknowledge that I have read the Code of Conduct.</label><br>
+
+          <input type="submit">
+        </form>
+      </div>
+    </div>
+        
+    {{ include templates/bottombar.html }}
+  </body>
+</html>
