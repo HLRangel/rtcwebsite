@@ -20,6 +20,9 @@
 
       <div class="preboard-join-form">
         <form action="/actions/signup.html">
+          <label for="emailbox">Insert your e-mail address</label><br>
+          <input type="email" name="emailbox" placeholder="your-email@example.com" required><br><br>
+
           <input type="checkbox" name="agebox" required>
           <label for="agebox">I acknowledge that I am 18 years old and that this will be verified non-intrusively in case I have to engage in sensitive proceedings.</label><br>
           
@@ -27,9 +30,9 @@
           <label for="statbox">I acknowledge that I have read the Statute.</label><br>
           
           <input type="checkbox" name="cocbox" required>
-          <label for="cocbox">I acknowledge that I have read the Code of Conduct.</label><br>
+          <label for="cocbox">I acknowledge that I have read the Code of Conduct.</label><br><br>
 
-          <input type="submit">
+          <input type="submit" class="rtc-button">
         </form>
       </div>
     </div>

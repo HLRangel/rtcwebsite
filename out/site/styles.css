@@ -15,7 +15,6 @@ body {
     font-family: var(--rtc-textfont);
     background-color: #FFFFFF;
 }
-
 .main-body{
     font-family: var(--rtc-textfont);
     width: 80%;
@@ -528,15 +527,6 @@ table, th, td {
     color: white;
 }
 
-.bottom-div-insert input[type=email] {
-    border-radius: 16px;
-    border-width: 1px;
-    border-style: solid;
-    background-color: rgba(0, 0, 0, 0.1);
-    width: 100%;
-    height: 40px;
-}
-
 .bottom-div-insert input[type=submit] {
     border-radius: 8px;
     border-width: 1px;
@@ -581,7 +571,7 @@ table, th, td {
     margin-top: 16px;
 }
 
-.see-statute-button {
+.rtc-button {
     padding: 10px 15px 10px 15px;
 
     background-color: rgb(194, 57, 57);
@@ -590,8 +580,36 @@ table, th, td {
     text-decoration: none;
 
     border-radius: 8px;
+    border-style: none;
 
     box-shadow: rgba(0, 0, 0, 0.151) 4px 4px 10px;
+
+    transition: 0.3s;
+}
+
+.rtc-button:hover {
+    background-color: rgb(226, 71, 71);
+}
+
+.preboard-join-form {
+    width: 95%;
+    margin: auto;
+}
+
+.preboard-join-form input[type=email] {
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--rtc-black);
+
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-left: 10px;
+    width: 97%;
+    height: 30px;
+}
+
+.preboard-join-form form label {
+    font-size: 12pt;
 }
 
 @media (max-width: 800px) {
