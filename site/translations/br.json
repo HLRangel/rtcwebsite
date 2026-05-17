@@ -173,5 +173,85 @@
 
     "st-article-14": {
         "text": "Artigo 14. A integração latino-americana é um objetivo político de primeira importância, visto que nossa cultura internacional de resistência a estruturas rentistas e à tirania dos direitos autorais, formalizando um \"Eixo Pirata.\""
+    },
+
+    "coc-title": {
+        "text": "Código de Conduta"
+    },
+    
+    "coc-title-coexistence": {
+        "text": "Sobre a coexistência dentro da sigla"
+    },
+    
+    "coc-title-disagreements": {
+        "text": "Desacordos são reais"
+    },
+
+    "coc-para-wearestill": {
+        "text": "Ainda estamos nos recuperando das consequências de uma década onde a mercadoria cultural principal foi o desempenho de uma aceitação superficial, onde fabricantes de armas e fornecedores de tecnologia de vigilância em massa fingiam se importar com o direito de viver de populações diversas, criando uma onda reacionária por parte de tolos ressentidos. Os próprios perseguidos realizaram sacrifícios simbólicos para satisfazer um puritanismo que agora se tornou mainstream."
+    },
+
+    "coc-para-herewecome": {
+        "text": "Nos deparamos, portanto, com a distinção entre nossa sigla e várias outras: <i>a maioria das pessoas acredita no que dizem</i>, pro bem ou pro mal. Aqueles que discordam de nós a ferro e fogo não estão dispostos a serem \"iluminados\". Claro que aqui existe uma distinção situacional, caso contrário, nenhum adulto deveria ser educado sobre nada, mas uma postura aberta pode ser diferenciada de um falso interesse ou da hostilidade por meio da intuição pessoal."
+    },
+
+    "coc-para-ofcoursethere": {
+        "text": "Pobre e rico, homosexual ou heterosexual, negro ou branco, cristão ou muçulmano, religioso ou ateu: ninguém é excluído do fervor ideológico simplesmente por que pensamos que ele é o <i>tipo de pessoa pré-disposto a concordar com a gente</i>. Isso se para todas as questões do dia-a-dia, até mesmo às questões que não estão ligadas a política partidária, dentro e fora de nossa sigla. O conteúdo do desacordo é o que define seu efeito na possibilidade da coexistência entre as pessoas: alguém que defende as ações anti-humanas do Estado de Israel contra as populações que ele oprime, ou alguém que defende a exclusão de migrantes no Sul do Brasil, já decidiu seu lado na história de nossa espécie; aquele que defende a inclusão do Neymar na seleção da Copa sofre apenas de um gosto pelo ridículo."
+    },
+
+    "coc-title-weareall": {
+        "text": "Somos todos voluntários"
+    },
+
+    "coc-para-thertcis": {
+        "text": "O RTC é um esforço voluntário, e portanto o respeito à disponibilidade dos participantes é importante. Textos, programas, e processos devem ser estruturados pensando na realidade do grupo. Participantes devem se manter comprometidos, mas também devem ficar abertos à possibilidade de imprevistos e fases ruins na vida de alguém, ou simples enjoo."
+    },
+
+    "coc-para-whenpeoplefeel": {
+        "text": "Quando um projeto causa estresse ou preocupação indevida a seus participantes, isto deve ser encarado como uma falha estrutural. Uma causa comum do estresse é a necessidade de manutenção: processos de revisão extensos, alinhamentos regulares e conserto de software. <i><b>Geralmente, quando uma tarefa está \"pronta\", o fardo individual da revisão sobre ela não deve exceder 20 minutos semanais por pessoa</b></i>."
+    },
+
+    "coc-title-mutualrespect": {
+        "text": "O respeito mútuo é obrigatório"
+    },
+
+    "coc-para-membersshouldrespect": {
+        "text": "Participantes devem respeitar a existência um do outro, seus direitos à vida privada e seus direitos à identidade e auto-identificação. Isto engloba quase tudo: raça, deficiência, situação de gênero, língua, e também preferências sexuais e românticas."
+    },
+
+    "coc-para-itisimpossible": {
+        "text": "É impossível delinear o significado específico de \"respeito\", e portanto esta é uma política interpretativa que deve ser aplicada de forma orgânica, mantendo em mente que a tolerância ressentida não se encaixa na categoria de \"respeito\"."
+    },
+
+    "coc-title-unnaceptable": {
+        "text": "Sobre os comportamentos inaceitáveis"
+    },
+
+    "coc-title-nopassive": {
+        "text": "A indireta não é bem-vinda"
+    },
+
+    "coc-para-whilemutualrespect": {
+        "text": "Enquanto o \"respeito mútuo\" sugere uma proibição sobre a conduta óbviamente abusiva, existe também uma preocupação com comportamentos passivo-agressivos que são dados na intenção de provocar uma reação vista por observadores como sendo desproporcional. Isto é extremamente grave em círculos sociais pequenos."
+    },
+
+    "coc-title-abuseoftechnological": {
+        "text": "É vedado o abuso de privilégios técnológicos, mesmo em reciprocidade"
+    },
+
+    "coc-para-theabuseof": {
+        "text": "O abuso de privilégios dentro de nossa infraestrutura digital na intenção de prejudicar um inimigo pessoal é proíbido, pois infringe tanto a confiança do alvo quanto a de todos que dependem nesta infraestrutura. Isso incluí casos onde o comportamento é feito em resposta a abusos pelo próprio alvo."
+    },
+
+    "coc-para-useoftechnological": {
+        "text": "O uso de medidas tecnológicas contra usuários mal-intencionados de nossos serviços deve ser realizado sob medida, exceto em casos onde alguém é vitimizado. Por exemplo, se um dos usuários de nosso serviço de hospedagem expõe um participante da RTC de forma indevida, as medidas apropriadas seriam a remoção imediata do conteúdo e suspensão de credenciais, mas não, por exemplo, o vazamento recíproco das informações deste usuário."
+    },
+
+    "coc-title-reporting": {
+        "text": "Sobre a denúncia interna"
+    },
+
+    "coc-para-reportconcerns": {
+        "text": "Denúncias de violações deste Código de Conduta devem ser comunicadas ao Centro no endereço eletrônico em rtc (ponto) report (arroba) comrades (ponto) sbs. Se você deseja não encaminhar sua denúncia ao Centro, deve encaminha-la ao participante que possuí a maior medida de privilégios técnicos. "
     }
 }
