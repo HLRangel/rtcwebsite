@@ -10,6 +10,8 @@
 
     <div class="main-body">
 
+      <h3 style="margin-bottom: 10px;" data-trans="featured-post">Featured post</h3>
+
       {{ iter_dir articles
         {{ add_document {{ var filepath }} "articles" }}
       }}
@@ -53,41 +55,7 @@
         }}
       }}
 
-      <div class="bottom-row-stuff">
-        <div class="fluid-banner normal-join-banner">
-
-        </div>
-
-        <!--
-        <div class="email-join-banner">
-          <div class="email-join-para">
-            <h3 data-trans="lets-start-sharing">Let's start sharing</h3>
-
-            <p data-trans="register-to-access">Register to access our knowledge base about open licensing and talk within community spaces.</p>
-          </div>
-
-          <div class="email-join-form">
-            <form>
-              <input type="email" placeholder="your-email@example.com" id="user-email-addr" class="email-entry-field">
-              <input type="submit" value="Register" class="email-entry-button">
-            </form>
-          </div>
-        </div>-->
-
-      <a href="https://www.pcrf.net/" target="_blank">
-        <div class="fluid-banner pa-support-banner">
-            <div class="pa-support-ico">
-              <img src="/assets/images/pa-person.png">
-            </div>
-
-            <div class="pa-support-text" data-trans="donate-against-genocide">
-              <h3>DONATE AGAINST GENOCIDE</h3>
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <h2 data-trans="redistribute-transform-copy">Redistribute, Transform, Copy!</h2>
+      <h2 data-trans="redistribute-transform-copy" style="margin-top:20px;">Redistribute, Transform, Copy!</h2>
 
       <p data-trans="the-rtc-is-a-collective">The RTC is a collective which defends the total abolition of copyright law and analyses its position within the capitalist mode of production. We are the antithesis of groups like the Association of American Publishers and the and the Authors Guild, seeking to educate and lobby against the tyranny of  what we call monopolistic rent titles.</p>
 

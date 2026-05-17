@@ -291,7 +291,11 @@
         "text": "Isso exige uma resposta: uma associação dedicada a Redistribuir, Transformar e Copiar! Para defender a legalização incondicional da pirataria e a extinção dos monopólios culturais, assim como os poderosos defendem seu direito de mantê-los. É isso que a RTC representa."
     },
 
-    "join-para-acommunityof": {
+    "join-title-acommunityof": {
+        "text": "Uma aliança pela criação"    
+    },
+
+    "join-para-thebestwayto": {
         "text": "A melhor maneira de apoiar a cultura aberta é criá-la. Assim, o RTC incentiva o exercício da criatividade tanto individual quanto coletiva; valorizamos a autenticidade, como pode ser visto em nosso site, textos e imagens."
     },
 
@@ -307,19 +311,27 @@
         "text": "Antes de aceder a sigla, leia o <a href=\"/org/guidelines.html\">Estatuto do RTC</a>, que define os pilares de nossa burocracia interna. É também de  <i><b>extrema importância</b></i> que você leia o <a href=\"/org/coc.html\">Código de Conduta</a>."
     },
 
-    "join-button": {
-        "text": "Venha com a gente"
+    "preboard-insertemail": {
+        "text": "Insira seu endereço de e-mail"
     },
 
-    "join-button": {
-        "text": "Venha com a gente"
+    "preboard-18ack": {
+        "text": "Confirmo que tenho 18 anos e que essa informação será verificada de forma não intrusiva, no caso de ações de alta importância."
     },
 
-    "join-button": {
-        "text": "Venha com a gente"
+    "preboard-statuteack": {
+        "text": "Confirmo que li o Estatuto."
     },
 
-    "join-button": {
-        "text": "Venha com a gente"
+    "preboard-cocack": {
+        "text": "Confirmo que li o Código de Conduta."
     },
+
+    "featured-post": {
+        "text": "Postagem em destaque"
+    },
+
+    "bottom-rentseek": {
+        "text": "Pela legalização da pirataria!"
+    }
 }
