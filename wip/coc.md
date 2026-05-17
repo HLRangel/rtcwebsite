@@ -26,6 +26,12 @@ It is impossible to delineate what "respect" actually means, and so this is a po
 
 While "mutual respect" implies a veto on abusive conduct to others, such as obvious insults and gratuitous discrimination, we are also mindful of "concern trolling", wherein someone frames insults as vague concerns, directed towards a wide group of people or to no one in particular, but whose semantic content clearly intends to hurt someone in a way where they *cannot reply without seeming unreasonable*. This is to be considered a worse offense than straightforward abuse.
 
-### Abuse of technological privileges
+### Abuse of technological privileges, even in reciprocity
 
-The abuse of rights over our tech infrastructure to pursue personal grudges is unacceptable.
+The abuse of rights over our tech infrastructure to pursue personal grudges is unacceptable and permanently hurts the trust of those who depend on them. This includes abuse done in reciprocity, when the dependent's behavior is likewise unacceptable.
+
+Use of technological measures against dependents must be measured and proportional, except in cases where someone is victimized, and must be limited in scope. For example, if someone whose website we are hosting puts up content targeting an RTC member, an acceptable immediate measure would be to block the content and temporarily lock credentials to the hosting account in case of a potential compromise. In our position of trust, it would not be acceptable to publicly hassle the hostee back.
+
+## Reporting
+
+Report concerns and violations directly to the Center at rtc (dot) report (at) comrades (dot) sbs. If you do not wish to contact the Center, approach the member of the group whom you trust which has the largest amount of technical privileges.
