@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+
+  {{ set title "Joining" }}
+  {{ include templates/head.html }}
+
+  <body>
+    {{ include templates/topbar.html }}
+
+    <div class="main-body">
+        <h1>Automatic sign-on is currently offline.</h1>
+        
+        <p>Please send an e-mail to <span style="font-weight: 800;">rtc.join@comrades.sbs</span>:</p>
+
+        <div class="mono-block">
+            <p>I have fulfilled all the requirements presented to me (above 18 years of age, read the Statute, read the Code of Conduct) and wish to join this mailing list.</p>
+        </div>
+
+        <a class="rtc-button" style="margin-top: 20px;" href="mailto:rtc.join@comrades.sbs?subject=Request%20to%20Join&body=I%20have%20fulfilled%20all%20the%20requirements%20presented%20to%20me%20(above%2018%20years%20of%20age%2C%20read%20the%20Statute%2C%20read%20the%20Code%20of%20Conduct)%20and%20wish%20to%20join%20this%20mailing%20list.">Send with default e-mail app</a>
+    </div>
+        
+    {{ include templates/bottombar.html }}
+  </body>
+</html>

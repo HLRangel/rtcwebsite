@@ -612,6 +612,10 @@ table, th, td {
     font-size: 12pt;
 }
 
+.mono-block {
+    font-family: monospace;
+}
+
 @media (max-width: 800px) {
     .news-container {
         width: 95%;

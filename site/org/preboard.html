@@ -14,23 +14,23 @@
     {{ include templates/topbar.html }}
 
     <div class="main-body">
-      <h2>Almost there!</h2>
+      <h2 data-trans="preboard-title-almostthere">Almost there!</h2>
 
-      <p>Before you join, it is required that you read the <a href="/org/guidelines.html">Statute of the RTC</a>, which sets out the basic bureaucracy of the group. Even if you'd rather just skim through that, it is <i><b>really important</b></i> that you read the <a href="/org/coc.html">Code of Conduct</a>, which sets up important guidelines for behavior within the group.</a></p>
+      <p data-trans="preboard-para-beforeyoujoin">Before you join, it is required that you read the <a href="/org/guidelines.html">Statute of the RTC</a>, which sets out the basic bureaucracy of the group. Even if you'd rather just skim through that, it is <i><b>really important</b></i> that you read the <a href="/org/coc.html">Code of Conduct</a>, which sets up important guidelines for behavior within the group.</a></p>
 
       <div class="preboard-join-form">
         <form action="/actions/signup.html">
-          <label for="emailbox">Insert your e-mail address</label><br>
+          <label for="emailbox" data-trans="preboard-insertemail">Insert your e-mail address</label><br>
           <input type="email" name="emailbox" placeholder="your-email@example.com" required><br><br>
 
           <input type="checkbox" name="agebox" required>
-          <label for="agebox">I acknowledge that I am 18 years old and that this will be verified non-intrusively in case I have to engage in sensitive proceedings.</label><br>
+          <label for="agebox" data-trans="preboard-18ack">I acknowledge that I am 18 years old and that this will be verified non-intrusively in case I have to engage in sensitive proceedings.</label><br>
           
           <input type="checkbox" name="statbox" required>
-          <label for="statbox">I acknowledge that I have read the Statute.</label><br>
+          <label for="statbox" data-trans="preboard-statuteack">I acknowledge that I have read the Statute.</label><br>
           
           <input type="checkbox" name="cocbox" required>
-          <label for="cocbox">I acknowledge that I have read the Code of Conduct.</label><br><br>
+          <label for="cocbox" data-trans="preboard-cocack">I acknowledge that I have read the Code of Conduct.</label><br><br>
 
           <input type="submit" class="rtc-button">
         </form>
