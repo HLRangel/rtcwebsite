@@ -333,5 +333,13 @@
 
     "bottom-rentseek": {
         "text": "Pela legalização da pirataria!"
+    },
+
+    "publishedon": {
+        "text": "Estampa de tempo em Inglês:"
+    },
+
+    "additionaldetails": {
+        "text": "Detalhes adicionais"
     }
 }

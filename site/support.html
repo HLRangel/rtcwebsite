@@ -8,9 +8,15 @@
     {{ include templates/topbar.html }}
 
     <div class="main-body">
-      <h2 id="donate">Donate</h2>
+      <h2 id="donate" data-trans="donate">Donate</h2>
 
-      <p>Support for our work is always appreciated, considering we’re always running low on funds. You can send over some stuff via the following crypto wallets:</p>
+      <p data-trans="youcandonate">You can donate directly to Lopes, who developed this site and maintains it, along with our finances and visual identity, using the Ko-Fi widget:</p>
+
+      <iframe id='kofiframe' src='https://ko-fi.com/hvilaverde/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:100%;padding:4px;background:#f9f9f9;' height='712' title='hvilaverde'></iframe>
+
+      <h2 id="donate-crypto" data-trans="donate-crypto">Via cryptocurrency</h2>
+
+      <p data-trans="weacceptdonations">We accept donations via the following cryptocurrency wallets:</p>
 
       <p><strong>BTC</strong>: 3FSa6zPweYhM2wjyCcFDCc9GLbFFqwTuwx</p>
 
@@ -18,8 +24,6 @@
 
       <p><strong>XMR</strong>: 88pxJgk7JR79pJGhm7bxhh7soY1pHmYjfPf2qC4hfTjvKrw4p4sL
       Qr65bTE5AP54b6RhDkiwcwN8P6PG6ppWFz9S5SDXL5d</p>
-
-      <p>If you wish to authenticate the arrival of your money, have any questions, or wish to donate via alternative means, contact the administration directly via rtc.admin (at) comrades (dot) sbs.</p>
     </div>
         
     {{ include templates/bottombar.html }}

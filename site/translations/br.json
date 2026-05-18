@@ -341,5 +341,21 @@
 
     "additionaldetails": {
         "text": "Detalhes adicionais"
+    },
+
+    "donate": {
+        "text": "Doar"
+    },
+
+    "youcandonate": {
+        "text": "Você pode doar diretamente para o Lopes, que desenvolveu tanto nosso site quanto nossa identidade visual, e que mantém a infraestrutura digital da sigla, usando o seguinte widget do Ko-Fi:"
+    },
+
+    "donate-crypto" : {
+        "text": "Via criptomoeda"
+    },
+
+    "weacceptdonations": {
+        "text": "Aceitamos doações por meio das seguintes carteiras de criptomoeda:"
     }
 }
