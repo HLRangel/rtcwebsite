@@ -58,9 +58,8 @@ We consider seq2seq applications like translation and MLM applications like data
 
 ### On "collections" in the Creative Commons
 
-Some individuals, such as Arianna Cheveldale, who is active in the open culture community and was a CC educator in 2022 whose Creative Commons Certificate textbook was made available by the B.C. and Yukon Faculty, alledge that all Creative Commons licenses permit usage CC works to be included "in a collection" with each other, even when those works' licenses would otherwise be incompatible for the purposes of creating a derivative work.
+Some individuals, such as Arianna Cheveldale, who is active in the open culture community and was a CC educator in 2022 whose Creative Commons Certificate textbook was made available by the B.C. and Yukon Faculty[1], alledge that all Creative Commons licenses permit usage CC works to be included "in a collection" with each other, even when those works' licenses would otherwise be incompatible for the purposes of creating a derivative work.
 
 However, **explicit collection rights under CC have not existed for over a decade**, as the 4.0 version of the CC license suite scrapped the definition of a "collection" entirely, and therefore relegated the matter to the shaky ground around database rights and the like. With a handful of cursory web searches, we could not find an opinion by a qualified legal professional to support the idea that collection rights still exist in any way. The last licenses to support such a device are those of the 3.0 series.
 
-
-
+[1] - CHEVELDAVE, A. Creative Commons Certificate. Available at: <[https://pressbooks.bccampus.ca/cccertificate/](https://pressbooks.bccampus.ca/cccertificate/)>. Accessed on: 25 jun. 2026.
